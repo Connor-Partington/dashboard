@@ -5,10 +5,15 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* container for everything */
+
 .main-container {
     display: flex;
     min-height: 100vh;
 }
+
+
+/* sidebar content */
 
 .sidebar {
     display: flex;
@@ -16,6 +21,8 @@
     flex: 20%;
     background-color: rgb(69, 144, 206);
 }
+
+/*right side main content */
 
 .main-content {
     display: flex;
@@ -25,14 +32,14 @@
 
 .header {
     display: flex;
-    min-height: 150px;
+    min-height: 180px;
 }
 
 .content {
     display: flex;
-    flex-wrap: wrap;
     min-height: 100vh;
     padding: 20px;
+    gap: 25px;
     background-color: rgb(222,	227	,234);
     box-shadow: 0px 10px 10px -10px rgba(33, 35, 38, 0.3) inset;
 }
@@ -40,7 +47,7 @@
 .projects-container {
     display: flex;
     flex-direction: column;
-    flex: 80%;
+    flex: 70%;
 }
 
 .projects {
@@ -49,9 +56,15 @@
     gap: 25px;
 }
 
+.projects-header, .announcements-header, .trending-header {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
 .project-card {
     display: flex;
-    flex: 0 1 400px;
+    flex-grow: 1;
     flex-direction: column;
     justify-content: space-between;
     background-color: white;
@@ -65,7 +78,7 @@
 .project-card-text {
     display: flex;
     flex-direction: column;
-    max-width: 280px;
+    max-width: 300px;
     gap: 5px;
 }
 
@@ -83,8 +96,26 @@
     gap: 30px;
 }
 
+
+/* Announcements and trending sections */
+
 .announcements-and-trending {
     display: flex;
     flex-direction: column;
-    flex: 20%;
+    flex: 25%;
+    gap: 40px;
 }
+
+.announcements-card {
+    display: flex;
+    flex: 0 1 300px;
+    max-width: 300px;
+    flex-direction: column;
+    background-color: white;
+    min-height: 300px;
+    border-radius: 10px;
+    padding: 30px 25px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.announcements-header
