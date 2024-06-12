@@ -41,6 +41,7 @@
 
 .content {
     display: flex;
+    flex-wrap: wrap;
     min-height: 100vh;
     padding: 20px;
     gap: 25px;
@@ -111,10 +112,15 @@
     gap: 40px;
 }
 
+/* Announcements */
+
+.announcements {
+    display: flex;
+    flex-direction: column;
+}
+
 .announcements-card {
     display: flex;
-    flex: 0 1 300px;
-    max-width: 300px;
     flex-direction: column;
     background-color: white;
     min-height: 300px;
@@ -145,12 +151,15 @@
     color: var(--body-text-grey);
 }
 
+/* Trending */
 
+.trending {
+    display: flex;
+    flex-direction: column;
+}
 
 .trending-card {
     display: flex;
-    flex: 0 1 300px;
-    min-width: 300px;
     flex-direction: column;
     background-color: white;
     border-radius: 10px;
