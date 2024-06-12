@@ -24,6 +24,35 @@
     flex-direction: column;
     flex: 20%;
     background-color: rgb(69, 144, 206);
+    padding: 20px;
+    gap: 60px;
+}
+
+.sidebar-header {
+    display: flex;
+    align-items: center;
+}
+
+.sidebar-header > img {
+    height: 50px;
+    width: 50px;
+}
+
+.sidebar-header > p {
+    font-weight: bold;
+    font-size: 1.8em;
+    color: white;
+}
+
+.sidebar-nav > ol {
+    list-style-type: none;
+}
+
+.sidebar-nav > ol li a{
+    color: white;
+    font-weight: bold;
+    font-size: 1.4em;
+    text-decoration: none;
 }
 
 /*right side main content */
@@ -102,6 +131,10 @@
     gap: 30px;
 }
 
+.project-card-icons > img {
+    height: 25px;
+    width: 25px;
+}
 
 /* Announcements and trending sections */
 
