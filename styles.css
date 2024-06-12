@@ -72,7 +72,7 @@
     flex-direction: column;
     justify-content: space-between;
     background-color: white;
-    min-height: 250px;
+    min-height: 225px;
     border-radius: 10px;
     padding: 30px 25px;
     border-left: 10px solid rgb(231, 182, 74);
@@ -150,7 +150,7 @@
 .trending-card {
     display: flex;
     flex: 0 1 300px;
-    max-width: 300px;
+    min-width: 300px;
     flex-direction: column;
     background-color: white;
     border-radius: 10px;
@@ -176,4 +176,8 @@
     flex-direction: column;
     gap: 5px;
     font-size: 0.9em;
+}
+
+.trending-item-profile-role {
+    color: var(--body-text-grey);
 }
